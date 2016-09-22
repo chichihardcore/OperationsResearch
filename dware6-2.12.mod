@@ -63,6 +63,8 @@ var gasRefined {GASOLINES} >= 0;
 # The objective is to minimize the total cost of creating the required gases
 minimize TotalCost: sum {i in CRUDEOILS} purchasedCrude[i] * PurchasePrice[i] - sum {j in GASOLINES} gasRefined[j] * RefiningCost;
 
+### chelsea here: why wouldnt you add the two sums here rather than subtract? I am adding...
+
 #########################
 # CONSTRAINTS           #
 #########################
